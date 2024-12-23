@@ -8,7 +8,7 @@ const NavBar = () => {
   const { user } = useUser();
 
   return (
-    <div className="shadow py-4 bg-[#00274d] text-white">
+    <div className="shadow py-6 bg-slate-900 text-white">
       <div className="container px-4 2xl:px-20 mx-auto flex justify-between items-center">
         <Link to={"/"}>
           <h1 className="text-3xl font-bold tracking-wider relative">

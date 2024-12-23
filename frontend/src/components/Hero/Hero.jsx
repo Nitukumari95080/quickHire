@@ -26,7 +26,7 @@ const Hero = () => {
       <div
         className="text-white p-16 mx-2 rounded-xl text-center"
         style={{
-          background: "linear-gradient(120deg, #00274d, #005f73)",
+          background: "linear-gradient(to right, #0f172a, #1e293b)",
           color: "#ffffff",
         }}
       >

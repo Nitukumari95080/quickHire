@@ -1,9 +1,12 @@
 import React from 'react';
 import { assets } from "../../assets/assets";
+import { useNavigate } from "react-router-dom";
 
 const JobCard = ({ job }) => {
+  const navigate = useNavigate();
+
   return (
-    <div className="border border-gray-200 p-4 shadow-md rounded-lg bg-white hover:shadow-lg transition-shadow duration-300">
+    <div className="border border-gray-200 p-4 shadow-md rounded-lg bg-slate-100 hover:shadow-lg transition-shadow duration-300">
       {/* Company Icon */}
       <div className="flex justify-between items-center mb-4">
         <img
@@ -34,10 +37,22 @@ const JobCard = ({ job }) => {
 
       {/* Action Buttons */}
       <div className="flex justify-between items-center mt-4">
-        <button className="bg-[#e49f0c] text-black text-sm px-4 py-2 rounded-lg hover:bg-[#cfaa5b] transition-colors">
+        <button
+          onClick={() => {
+            navigate(`/apply-job/${job._id}`);
+            window.scrollTo(0, 0);
+          }}
+          className="bg-[#e49f0c] text-black text-sm px-4 py-2 rounded-lg hover:bg-[#cfaa5b] transition-colors"
+        >
           Apply Now
         </button>
-        <button className=" text-black text-sm px-4 py-2 border border-yellow-500 rounded-lg  transition-colors">
+        <button
+          onClick={() => {
+            navigate(`/apply-job/${job._id}`);
+            window.scrollTo(0, 0);
+          }}
+          className="text-black text-sm px-4 py-2 border border-yellow-500 rounded-lg transition-colors"
+        >
           Learn More
         </button>
       </div>

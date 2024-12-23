@@ -3,7 +3,7 @@ import { assets } from "../../assets/assets";
 
 const Trusted = () => {
   return (
-    <div className="container 2xl:px-20 mx-auto my-8">
+    <div className="container 2xl:px-20 mx-auto my-10 bg-slate-300">
       <div className=" text-black p-8 mx-2 rounded-xl text-center border border-gray-300">
         <h1 className="text-2xl font-bold text-center mb-6">Trusted by</h1>
         <div className="flex flex-wrap justify-center items-center gap-10">
