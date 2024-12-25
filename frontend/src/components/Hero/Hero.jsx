@@ -31,7 +31,7 @@ const Hero = () => {
         }}
       >
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-medium mb-4">
-          Over 10,000+ jobs to apply
+          Over <span className="text-[#e49f0c]">10,000+</span> jobs to apply
         </h2>
         <p className="text-base md:text-lg lg:text-xl max-w-3xl mx-auto">
           Your Next Big Career Move Starts Right Here - Explore the Best Job
