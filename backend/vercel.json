@@ -9,23 +9,12 @@
             "dist/**"
           ]
         }
-      },
-      {
-        "src": "client/package.json",
-        "use": "@vercel/static-build",
-        "config": {
-          "distDir": "build"
-        }
       }
     ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "server.js"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/client/$1"
+        "dest": "index.js"
       }
     ]
   }
